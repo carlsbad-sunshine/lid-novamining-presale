@@ -40,7 +40,7 @@ export default function Footer() {
         </Link>
         <Link
           display="inline-block"
-          href="https://twitter.com/LIDProtocol"
+          href="https://twitter.com/LID_Protocol"
           m="20px">
           <Image w="auto" h="25px" src="./icons/Twitter.png" />
         </Link>
