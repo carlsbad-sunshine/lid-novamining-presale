@@ -1,0 +1,10 @@
+const addresses = {
+  presale: '0x88366e3bb908345CaFCCCAAEe3F1e501373D179D',
+  redeemer: '0x45B55CD322dD64CBd18A25684ed2FA337868B8cc',
+  timer: '0x78c3C418940aCB43b09441CFaE4FA634be8a0A74',
+  token: '0xd9a6803f41a006cbf389f21e55d7a6079dfe8df3',
+  access: '0x6eF6d87C9000E4952341B49208f5238EAFbdEbE9',
+  staking: '0x9a54FE35D41bc7c8F7071aBf0cCD952505e29ceb'
+};
+
+export default addresses;
