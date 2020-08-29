@@ -49,7 +49,7 @@ export const providerOptions = {
   }
 };
 
-export const totalPresale = process.env.REACT_APP_TOTAL_PRESALE;
+export const totalPresale = process.env.REACT_APP_TOTAL_PRESALE || '35000000';
 
 export const infura_ids = [
   '0764bdc3bf3f4eb7b38dc5b45d652bc9',
@@ -60,8 +60,8 @@ export const infura_ids = [
   '301ca1cb214744b69c68548011cf9e1d'
 ];
 
-export const referralBP = process.env.REACT_APP_REFERRAL_BP;
-export const basisPoint = process.env.REACT_APP_BASISPOINT;
+export const referralBP = process.env.REACT_APP_REFERRAL_BP || '250';
+export const basisPoint = process.env.REACT_APP_BASISPOINT || '10000';
 
 export const META = {
   TOKEN_NAME: process.env.REACT_APP_TOKEN_NAME || 'LID',
