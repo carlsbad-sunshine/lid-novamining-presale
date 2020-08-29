@@ -400,7 +400,7 @@ function App() {
             rate={currentPrice}
             hardcap={hardcap}
             totalEth={totalEth}
-            cap={toWei('20')}
+            cap={toWei('50')}
             accountDeposit={accountEthDeposit}
             setVal={setDepositVal}
             val={depositVal}

@@ -27,8 +27,6 @@ export default function DepositForm({
         .add(
           toBN(cap)
             .sub(toBN(accountDeposit))
-            .mul(toBN(referralBP))
-            .div(toBN(basisPoint))
         )
     : toBN('1');
   const availableByTotalDeposit = toBN(hardcap).gte(toBN(totalEth))
