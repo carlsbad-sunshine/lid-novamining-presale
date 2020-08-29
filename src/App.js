@@ -357,6 +357,8 @@ function App() {
     }
   }, [accessTime]);
 
+  console.log("endTime",endTime)
+
   return (
     <ThemeProvider theme={theme}>
       <CSSReset />
@@ -395,7 +397,9 @@ function App() {
       )}
       {isActive && !isEnded && !isPaused && (
         <>
-          <EndTimer expiryTimestamp={endTime} hardcap={hardcap} />
+          {endTime != 0 &&
+            <EndTimer expiryTimestamp={endTime} hardcap={hardcap} />
+          }
           <DepositForm
             rate={currentPrice}
             hardcap={hardcap}
