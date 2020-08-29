@@ -68,5 +68,5 @@ export const META = {
   TOKEN_SYMBOL: process.env.REACT_APP_TOKEN_SYMBOL || 'LID',
   TOKEN_OWNER_WEBSITE:
     process.env.REACT_APP_TOKEN_OWNER_WEBSITE || 'https://lid.sh',
-  REFERRAL_LINK: process.env.REACT_APP_REFERRAL_LINK || 'https://lid.sh/#/'
+  REFERRAL_LINK: process.env.REACT_APP_SITE || 'https://lid.sh/#/'
 };

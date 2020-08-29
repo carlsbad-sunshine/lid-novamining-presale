@@ -29,7 +29,7 @@ export default function ReferralCode({
         w="100%"
         mb="20px"
         p="20px">
-        <CopyToClipboard text={`${META.REFERRAL_LINK}${address}`}>
+        <CopyToClipboard text={`${META.REFERRAL_LINK}#/${address}`}>
           <Button
             display="block"
             color="lid.fgLight"
@@ -57,7 +57,7 @@ export default function ReferralCode({
           borderColor="lid.stroke"
           borderRadius="28px"
           w="100%">
-          {`${META.REFERRAL_LINK}${address}`}
+          {`${META.REFERRAL_LINK}#/${address}`}
         </Text>
       </Box>
       <Grid
