@@ -11,13 +11,13 @@ export const providerOptions = {
   walletconnect: {
     package: WalletConnectProvider, // required
     options: {
-      infuraId: process.env.WALLET_CONNECT_INFURA // required
+      infuraId: process.env.REACT_APP_WALLET_CONNECT_INFURA // required
     }
   },
   fortmatic: {
     package: Fortmatic, // required
     options: {
-      key: process.env.FORTMATIC_KEY // required
+      key: process.env.REACT_APP_FORTMATIC_KEY // required
     }
   },
   torus: {
@@ -32,19 +32,19 @@ export const providerOptions = {
   portis: {
     package: Portis, // required
     options: {
-      id: process.env.PORTIS_KEY // required
+      id: process.env.REACT_APP_PORTIS_KEY // required
     }
   },
   squarelink: {
     package: Squarelink, // required
     options: {
-      id: process.env.SQUARELINK_KEY // required
+      id: process.env.REACT_APP_SQUARELINK_KEY // required
     }
   },
   mewconnect: {
     package: MewConnect, // required
     options: {
-      infuraId: process.env.MEWCONNECT // required
+      infuraId: process.env.REACT_APP_MEWCONNECT // required
     }
   }
 };
