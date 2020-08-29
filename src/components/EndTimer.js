@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, Box } from '@chakra-ui/core';
 import CountDown from './CountDown';
+import { fromWei } from '../utils';
 
-export default function EndTimer({ expiryTimestamp }) {
+export default function EndTimer({ expiryTimestamp, hardcap }) {
   return (
     <Box
       display="block"
@@ -28,7 +29,7 @@ export default function EndTimer({ expiryTimestamp }) {
         48 hour timer.
       </Text>
       <Text fontSize={{ base: '12px', sm: '14px' }} fontWeight="light">
-        Ends after 48 hours or 1500 ETH.
+        Ends after 48 hours or {fromWei(hardcap)} ETH.
       </Text>
     </Box>
   );

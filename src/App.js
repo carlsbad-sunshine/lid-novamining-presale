@@ -277,6 +277,10 @@ function App() {
       alert('Must enter a value lower than your ETH balance.');
       return;
     }
+    if (referralAddress === address) {
+      alert('Sender cannot be referrer. Use a different referral address.');
+      return;
+    }
     await lidPresaleSC.methods
       .deposit(referralAddress)
       .send({ from: address, value: depositVal });
@@ -391,7 +395,7 @@ function App() {
       )}
       {isActive && !isEnded && !isPaused && (
         <>
-          <EndTimer expiryTimestamp={endTime} />
+          <EndTimer expiryTimestamp={endTime} hardcap={hardcap} />
           <DepositForm
             rate={currentPrice}
             hardcap={hardcap}
@@ -433,7 +437,6 @@ function App() {
           handleIssueTokens={handleIssueTokens}
         />
       )}
-
       <Footer />
     </ThemeProvider>
   );

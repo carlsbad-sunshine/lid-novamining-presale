@@ -42,6 +42,7 @@ export default function Claimer({
           NMT to Claim: {shortEther(accountRedeemable)}
         </Text>
         <Button
+          isDisabled={accountRedeemable === '0'}
           variantColor="blue"
           bg="lid.brand"
           color="white"
