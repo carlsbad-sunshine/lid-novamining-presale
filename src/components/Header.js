@@ -18,6 +18,8 @@ export default function Header({ address, onConnect }) {
           display="inline-block"
           href={META.TOKEN_OWNER_WEBSITE}
           m="0px"
+          target="_blank"
+          rel="noreferrer noopener"
           ml="-3px">
           <Image
             src="/logo.png"
@@ -79,7 +81,12 @@ export default function Header({ address, onConnect }) {
         Whitelisted? {isWhitelisted ? "Yes" : "No"}
         </Text>
       */}
-        <Link display="inline-block" href="https://lid.sh" m="0px">
+        <Link
+          display="inline-block"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://lid.sh"
+          m="0px">
           <Image
             src="/logo-lid.png"
             alt="Lid Logo"

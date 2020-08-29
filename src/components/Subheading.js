@@ -63,6 +63,8 @@ export default function Subheading({
               <Link
                 wordBreak="break-word"
                 color="lid.brand"
+                target="_blank"
+                rel="noreferrer noopener"
                 href={'https://etherscan.io/address/' + addresses.presale}
                 mt="15px"
                 display="block">
