@@ -23,7 +23,11 @@ export default function StartTimer({ startTime, accessTime, stakingLid }) {
       <CountDown expiryTimestamp={accessTime} />
       <Text>
         Stake more LID at{' '}
-        <Link color="lid.brand" href="https://stake.lid.sh">
+        <Link
+          color="lid.brand"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://stake.lid.sh">
           stake.lid.sh
         </Link>{' '}
         to get access sooner.
