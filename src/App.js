@@ -19,6 +19,8 @@ import { providerOptions, totalPresale, infura_ids } from './config';
 import addresses from './contracts/addresses';
 import abis from './contracts/abis';
 
+import { META } from './config';
+
 import theme from './theme';
 
 const web3Modal = new Web3Modal({
@@ -287,7 +289,9 @@ function App() {
 
   const handleLidClaim = async function () {
     if (toBN(accountRedeemable).lt(toBN('1'))) {
-      alert('You must have at least 1 wei of NMT to claim.');
+      alert(
+        `You must have at least 1 wei of ${META.TOKEN_SYMBOL} to claim.`
+      );
       return;
     }
     await lidPresaleSC.methods.redeem().send({ from: address });

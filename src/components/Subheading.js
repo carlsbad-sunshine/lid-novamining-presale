@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Box, Flex, Grid, Image, Link } from '@chakra-ui/core';
 import { shortEther, toBN, toWei } from '../utils';
-import { totalPresale } from '../config';
+import { totalPresale, META } from '../config';
 import addresses from '../contracts/addresses';
 
 export default function Subheading({
@@ -57,7 +57,7 @@ export default function Subheading({
             borderColor="lid.stroke"
             bg="lid.bg">
             <Text fontSize="18px" m="0" p="0" color="lid.fgMed">
-              Verified NMT Presale Contract
+              {`Verified ${META.TOKEN_SYMBOL} Presale Contract`}
             </Text>
             {addresses.presale ? (
               <Link
@@ -114,7 +114,7 @@ export default function Subheading({
               top="-3px"
             />
             <Text ml="10px" mt="5px" color="lid.bg" display="inline-block">
-              Your NMT Tokens
+              {`Your ${META.TOKEN_SYMBOL} Tokens`}
             </Text>
             <Text fontSize="38px" w="100%" fontWeight="bold">
               {maxShares !== '0'
@@ -192,7 +192,7 @@ export default function Subheading({
               top="-3px"
             />
             <Text ml="10px" mt="5px" color="lid.fgMed" display="inline-block">
-              Total Presale NMT
+              {`Total Presale ${META.TOKEN_SYMBOL}`}
             </Text>
             <Text fontSize="38px" w="100%" fontWeight="bold" color="lid.brand">
               {shortEther(toWei(totalPresale))}

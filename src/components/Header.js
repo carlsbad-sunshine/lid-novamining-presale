@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, Box, Flex, Image, Link, Button } from '@chakra-ui/core';
 import Blockie from './Blockie';
+import { META } from '../config';
 
 export default function Header({ address, onConnect }) {
   return (
@@ -15,12 +16,12 @@ export default function Header({ address, onConnect }) {
         pr={{ base: '20px', lg: '0px' }}>
         <Link
           display="inline-block"
-          href="https://novamining.org/"
+          href={META.TOKEN_OWNER_WEBSITE}
           m="0px"
           ml="-3px">
           <Image
             src="/logo.png"
-            alt="Novamining Logo"
+            alt={`${META.TOKEN_NAME} Logo`}
             w="auto"
             h="60px"
             display="inline-block"
@@ -34,7 +35,7 @@ export default function Header({ address, onConnect }) {
             display="inline-block"
             ml="20px"
             color="lid.brand">
-            NMT Presale
+            {`${META.TOKEN_SYMBOL} Presale`}
           </Text>
         </Link>
         {address ? (

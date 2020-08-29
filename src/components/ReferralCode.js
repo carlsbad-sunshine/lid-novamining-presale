@@ -2,6 +2,7 @@ import React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Text, Box, Button, Grid } from '@chakra-ui/core';
 import { shortEther } from '../utils';
+import { META } from '../config';
 
 export default function ReferralCode({
   address,
@@ -28,7 +29,7 @@ export default function ReferralCode({
         w="100%"
         mb="20px"
         p="20px">
-        <CopyToClipboard text={'https://novamining.lid.sh/#/' + address}>
+        <CopyToClipboard text={`${META.REFERRAL_LINK}${address}`}>
           <Button
             display="block"
             color="lid.fgLight"
@@ -56,7 +57,7 @@ export default function ReferralCode({
           borderColor="lid.stroke"
           borderRadius="28px"
           w="100%">
-          https://novamining.lid.sh/#/{address}
+          {`${META.REFERRAL_LINK}${address}`}
         </Text>
       </Box>
       <Grid
