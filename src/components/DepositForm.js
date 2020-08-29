@@ -24,10 +24,6 @@ export default function DepositForm({
   const availableByAccountDeposit = toBN(cap).gte(toBN(accountDeposit))
     ? toBN(cap)
         .sub(toBN(accountDeposit))
-        .add(
-          toBN(cap)
-            .sub(toBN(accountDeposit))
-        )
     : toBN('1');
   const availableByTotalDeposit = toBN(hardcap).gte(toBN(totalEth))
     ? toBN(hardcap)
@@ -70,7 +66,7 @@ export default function DepositForm({
           Deposit ETH for NMT
         </Text>
         <Text fontSize="18px" color="blue.500">
-          Minimum 0.01 ETH, Maximum 20 ETH
+          Minimum 0.01 ETH, Maximum {shortenDecimal(fromWei(cap))} ETH
         </Text>
         <Text fontSize="18px" color="red.500">
           Your Available Max: {shortenDecimal(fromWei(availableMax))} ETH

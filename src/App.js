@@ -187,7 +187,7 @@ function App() {
             address,
             startTime / 1000
           ],
-          returns: [['accessTime', (val) => val.toNumber() * 1000]]
+          returns: [['accessTime', (val) => (val.toNumber() + 60) * 1000]]
         },
         {
           target: addresses.staking,
