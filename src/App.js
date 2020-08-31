@@ -65,7 +65,7 @@ function App() {
     hardcap: '0',
     stakingLid: '0',
     isEnded: false,
-    isPaused: false
+    isPaused: true
   });
 
   const {
